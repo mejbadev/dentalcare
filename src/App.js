@@ -12,6 +12,8 @@ import Footer from './Componants/Footer/Footer';
 
 import ServiceDetail from './Componants/ServiceDetail/ServiceDetail';
 import PrivateRoute from './Componants/PrivateRoute/PrivateRoute';
+import Blogs from './Componants/Blogs/Blogs';
+import GetAppointMent from './Componants/GetAppointMent/GetAppointMent';
 
 function App() {
   return (
@@ -31,6 +33,12 @@ function App() {
         <Route path='/about'>
           <About></About>
         </Route>
+        <PrivateRoute path='/blogs'>
+          <Blogs></Blogs>
+        </PrivateRoute>
+        <PrivateRoute path='/appointment'>
+          <GetAppointMent></GetAppointMent>
+        </PrivateRoute>
         <PrivateRoute path='/services/:serviceId'>
           <ServiceDetail></ServiceDetail>
         </PrivateRoute>

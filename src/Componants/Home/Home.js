@@ -3,6 +3,8 @@ import Banner from '../Banner/Banner';
 import Blogs from '../Blogs/Blogs';
 import Doctors from '../Doctors/Doctors';
 import Services from '../Services/Services';
+import Reviews from '../Reviews/Reviews';
+import ContactUs from '../ContactUs/ContactUs';
 
 
 const Home = () => {
@@ -11,7 +13,7 @@ const Home = () => {
             <Banner></Banner>
             <Services></Services>
             <Doctors></Doctors>
-            <Blogs></Blogs>
+            <ContactUs></ContactUs>
         
             
         </div>

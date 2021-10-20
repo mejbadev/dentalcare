@@ -14,25 +14,12 @@ const useFirebase = () => {
     
   
     const handleGoogleLogin = () => {
-        signInWithPopup(auth, provider)
-            .then(result => {
-                const user = result.user;
-                setUser(user);
-            }).catch((error) => {
-                setError(error.message);
-            });
+       return signInWithPopup(auth, provider)
+       
     }
     const login =(email, password)=>{
-        signInWithEmailAndPassword(auth, email, password)
-    .then((result) => {
-        // Signed in 
-        const user = result.user;
-        setUser(user);
-        // ...
-    })
-    .catch((error) => {
-       
-    });
+       return signInWithEmailAndPassword(auth, email, password)
+  
 
     }
     const createUser =(name, email, password)=>{
@@ -42,6 +29,8 @@ const useFirebase = () => {
        const user = result.user;
        user.displayName = name;
        setUser(user);
+       console.log(user.displayName);
+    
         // ...
       })
       .catch((error) => {
@@ -59,14 +48,16 @@ const useFirebase = () => {
         });
     }
     useEffect(()=>{
-        onAuthStateChanged(auth, (user)=>{
+      const unsubscribed= onAuthStateChanged(auth, (user)=>{
             if(user){
                 setUser(user);
 
             }else{
                 // console.log('user in signed out');
+                setUser({})
             }
-        })
+        });
+        return ()=>unsubscribed;
     }, [])
 
     return { user, error, handleGoogleLogin, logOut, message, createUser, login};

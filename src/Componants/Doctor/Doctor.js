@@ -16,7 +16,7 @@ const Doctor = (props) => {
             <p>{detailProfile.slice(0,120)}</p>
             <p className='text-dark'> <i className="far fa-star text-warning"></i> {rate}</p>
             <br />
-            <Link to='/' ><button className='btn btn-info p-2'>Get Appoint</button></Link>
+            <Link to='/appointment' ><button className='btn btn-info p-2'>Get Appoint</button></Link>
             
         </div>
         </div>
