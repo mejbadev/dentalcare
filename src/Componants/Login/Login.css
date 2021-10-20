@@ -1,0 +1,8 @@
+input {
+  margin-left: 10px;
+  border: none;
+  padding: 10px;
+  width: 75%;
+  outline: azure;
+  border-bottom: 1px solid grey;
+}

@@ -1,0 +1,12 @@
+.blog-detail img {
+  width: 200px;
+  height: 250px;
+}
+
+.blog-detail p {
+  text-align: justify;
+}
+
+.blog-detail {
+  border: 1px solid rgb(112, 180, 243);
+}

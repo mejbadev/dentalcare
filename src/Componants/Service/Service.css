@@ -1,0 +1,10 @@
+.service-detail {
+  border-radius: 20px;
+  box-shadow: -2px -2px 1px rgb(112, 180, 243);
+}
+
+.service-detail img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}

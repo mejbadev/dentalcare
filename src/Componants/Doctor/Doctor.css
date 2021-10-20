@@ -1,0 +1,15 @@
+.doctor-detail {
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 1px rgb(112, 180, 243);
+}
+
+.doctor-detail img {
+  width: 150px;
+  height: 150px;
+  border-radius: 25%;
+}
+
+i {
+  color: gold;
+}
