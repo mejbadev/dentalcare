@@ -2,14 +2,14 @@
 This is a healthcare website named DENTALCARE. In this website People can see about DENTALCARE. They can get their appointment on this website.
 The site link is: https://healthcare-website-c383f.web.app/
 
-##How it Work
+# How it Work
 
 THis Website have about 7 nav Home, Services, Doctors, contact used in home page. They are in HashLink. Used private Route for service detail and get appointment and blog navigation. People can not read blogs, watch detail service or get appointment without login the page. 
 
-## About Design
+# About Design
 Full website is created using HTML, CSS, Bootstrap , FontAwesome, Vanila Css, ReactJs, Firebase. 
 
-##Used componant
+# Used componant
 Home, ContactUs, Services, GetAppointment, Doctors , Blogs, Etc
 
 ### `npm start`
