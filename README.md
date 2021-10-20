@@ -12,6 +12,9 @@ Full website is created using HTML, CSS, Bootstrap , FontAwesome, Vanila Css, Re
 # Used componant
 Home, ContactUs, Services, GetAppointment, Doctors , Blogs, Etc
 
+# Used React
+In this website I used react bootstrap, react router, router-dom, context-api, 
+
 ### `npm start`
 
 Runs the app in the development mode.\
